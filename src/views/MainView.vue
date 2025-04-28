@@ -1,14 +1,19 @@
 <script setup>
-
+    import Sidebar from '../components/Sidebar.vue';
+    import TopBar from '../components/TopBar.vue';
+    import Dashboard from '../modules/Dashboard/Dashboard.vue';
 </script>
 
 <template>
-    
-    <h1 class="text-3xl text-blue-500 font-bold underline mb-5">
-        Main View a
-    </h1>
+    <div class="flex">
+        <Sidebar />
+        <div class="flex-1 flex flex-col">
+            <TopBar />
+            <div class="flex-1 p-6 bg-gray-100 overflow-auto">
+                <Dashboard />
+            </div>
+        </div>
+    </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
