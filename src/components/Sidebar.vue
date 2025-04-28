@@ -18,8 +18,8 @@ const items = [
             <ul class="">
                 <li v-for="(item, index) in items" :key="index">
                     <span class="block px-8 py-3 w-full" :class="{
-                        'bg-purple-600 text-white': index === 0,
-                        'hover:bg-purple-600 hover:text-white': index !== 0
+                        'bgMain text-white': index === 0,
+                        'hover:bgMain hover:text-white': index !== 0
                     }">
                         {{ item.name }}
                     </span>
@@ -27,7 +27,7 @@ const items = [
             </ul>
             <ul class="mt-auto border-t border-gray-300">
                 <li>
-                    <span class="block px-8 py-3 hover:bg-purple-500 hover:text-white">Settings</span>
+                    <span class="block px-8 py-3 hover:bgMain hover:text-white">Settings</span>
                 </li>
             </ul>
         </div>

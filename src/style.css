@@ -9,4 +9,20 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Backgrounds */
+  --main-bg: #4f46e5;
+  --main-hover-bg: #51b8fd;
+}
+
+.bgMain {
+  background-color: var(--main-bg);
+}
+
+.hover\:bgMain:hover {
+  background-color: var(--main-hover-bg);
+}
+
+.text-main {
+  color: var(--main-bg);
 }

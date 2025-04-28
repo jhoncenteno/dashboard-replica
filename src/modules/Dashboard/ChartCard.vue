@@ -16,7 +16,7 @@ const props = defineProps({
   }
 })
 
-const chartColor = '#1E40AF';
+const chartColor = 'var(--main-bg)';
 const gridColor = '#f3f4f6';
 const chartWidth = 3
 
