@@ -1,12 +1,20 @@
 <script setup>
 import ChartCard from './ChartCard.vue';
 
+const chartCategories = [
+    '01. Sep', '02. Sep', '03. Sep', '04. Sep',
+    '05. Sep', '06. Sep', '07. Sep', '08. Sep',
+    '09. Sep', '10. Sep', '11. Sep', '12. Sep',
+    '13. Sep', '14. Sep'
+]
+
+const chartData = [0, 20, 38, 40, 15, 10, 15, 18, 14, 12, 20, 35, 42, 0]
 
 </script>
 
 <template>
 
-    <div class="flex flex-wrap items-start gap-10">
+    <div class="flex items-start gap-10">
 
         <div class="w-1/6">
             <div class="bg-white p-4 rounded-lg space-y-4">
@@ -59,8 +67,8 @@ import ChartCard from './ChartCard.vue';
 
             </div>
 
-            <ChartCard />
-            <ChartCard />
+            <ChartCard title="Comments" :data="chartData" :categories="chartCategories" />
+            <ChartCard title="Actions" :data="chartData" :categories="chartCategories" />
 
         </div>
 
