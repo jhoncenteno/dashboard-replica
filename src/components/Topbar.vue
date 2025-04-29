@@ -23,7 +23,7 @@ const showNotificationsTooltip = ref(false)
                 <img :src="bell" alt="" class="w-5 cursor-pointer transform transition-transform hover:scale-110">
                 <div v-show="showNotificationsTooltip"
                     class="absolute left-1/2 -translate-x-1/2 mt-2 w-28 bg-white px-2 py-1 rounded shadow z-10">
-                    <p class="text-xs font-semibold text-center">These are your available credits</p>
+                    <p class="text-xs font-semibold text-center">There are no new notifications</p>
                 </div>
             </div>
             <div class="flex items-center gap-1 pl-4 border-l border-gray-200  cursor-pointer">
