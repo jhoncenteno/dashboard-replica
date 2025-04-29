@@ -106,7 +106,7 @@ const series = [{
 
 <template>
 
-    <div class="w-full h-[33vh] p-2 bg-white rounded-lg transform transition-transform hover:scale-102">
+    <div class="w-full aspect-[4.3/1] p-2 bg-white rounded-lg transform transition-transform hover:scale-102">
         <VueApexCharts width="100%" height="100%" type="line" :options="options" :series="series" />
     </div>
 </template>

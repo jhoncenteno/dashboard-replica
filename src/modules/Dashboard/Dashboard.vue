@@ -42,7 +42,7 @@ const showNewVoiceTooltip = ref(false)
                     <div class="relative" @mouseenter="showNewVoiceTooltip = true"
                         @mouseleave="showNewVoiceTooltip = false">
                         <button class="bgMain rounded p-1 flex items-center justify-center cursor-pointer">
-                            <img :src="plus" alt="Speaker" class="w-3 invert" />
+                            <img :src="plus" alt="Add" class="w-3 invert" />
                         </button>
                         <div v-show="showNewVoiceTooltip"
                             class="absolute left-1/2 -translate-x-1/2 mt-2 w-30 bg-white px-2 py-1 rounded shadow z-10">

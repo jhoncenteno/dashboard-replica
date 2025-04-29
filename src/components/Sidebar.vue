@@ -15,7 +15,7 @@ const items = [
 ]
 
 const settings = {
-    name: 'Setttings', icon: settingsIcon
+    name: 'Settings', icon: settingsIcon
 }
 </script>
 
