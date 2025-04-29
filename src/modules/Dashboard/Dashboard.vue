@@ -30,9 +30,9 @@ const showNewVoiceTooltip = ref(false)
 
 <template>
 
-    <div class="flex items-start gap-10">
+    <div class="flex items-start gap-10 h-full">
 
-        <div class="w-1/6">
+        <div class="w-[12vw]">
             <div class="bg-white p-4 rounded-lg space-y-4 transform transition-transform hover:scale-105">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
@@ -57,7 +57,7 @@ const showNewVoiceTooltip = ref(false)
             </div>
         </div>
 
-        <div class="flex-1 space-y-8">
+        <div class="h-full flex-1 flex flex-col justify-between">
             <div class="flex flex-wrap justify-between items-stretch gap-4">
 
                 <div class="flex flex-wrap gap-4">

@@ -21,9 +21,9 @@ const settings = {
 
 <template>
 
-    <div class="w-64 h-screen bg-white text-black flex flex-col">
+    <div class="w-[15vw] h-screen bg-white text-black flex flex-col">
         <span class="px-6 py-4 font-bold text-2xl border-gray-700">
-            My App
+            Dashboard App
         </span>
         <div class="flex-1 flex flex-col mt-8">
             <ul class="">

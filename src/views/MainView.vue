@@ -9,7 +9,7 @@
         <Sidebar />
         <div class="flex-1 flex flex-col">
             <TopBar />
-            <div class="flex-1 p-6 bg-gray-100 overflow-auto">
+            <div class="flex-1 py-11 px-9 bg-gray-100 overflow-auto">
                 <Dashboard />
             </div>
         </div>
