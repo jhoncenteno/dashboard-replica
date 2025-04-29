@@ -2,18 +2,18 @@
 import VueApexCharts from 'vue3-apexcharts';
 
 const props = defineProps({
-  title: {
-    type: String,
-    required: true
-  },
-  categories: {
-    type: Array,
-    required: true
-  },
-  data: {
-    type: Array,
-    required: true
-  }
+    title: {
+        type: String,
+        required: true
+    },
+    categories: {
+        type: Array,
+        required: true
+    },
+    data: {
+        type: Array,
+        required: true
+    }
 })
 
 const chartColor = 'var(--main-bg)';
@@ -24,7 +24,7 @@ const options = {
     chart: {
         height: "100%",
         type: 'line',
-        zoom: {enabled: false},
+        zoom: { enabled: false },
         toolbar: { show: false },
         background: '#ffffff',
     },
@@ -40,7 +40,7 @@ const options = {
         text: props.title,
         align: 'left',
         style: {
-            fontSize: '16px',    
+            fontSize: '16px',
         }
     },
     grid: {
@@ -66,8 +66,8 @@ const options = {
         },
     },
     markers: {
-        colors: ['#FFFFFF'], 
-        strokeColor: chartColor, 
+        colors: ['#FFFFFF'],
+        strokeColor: chartColor,
         strokeWidth: 3,
     },
     yaxis: {
@@ -93,7 +93,7 @@ const options = {
         },
         x: { show: false }
     },
-    
+
 }
 
 const series = [{

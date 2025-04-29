@@ -1,23 +1,29 @@
 ## Tech Stack
-- Vue 3
-- Vite
-- Tailwind CSS
-- ApexCharts (for charts)
+- **Vue 3** 
+- **Vite** 
+- **Tailwind CSS** 
+- **ApexCharts** - Library for charts
 
 ## Getting Started
 To run the project locally:
 
+1. **Clone the repository**
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/vue-dashboard-assessment.git # USE REAL REPOSITORY
+```
 
-# Navigate to the project directory
+2. **Navigate to the project directory**
+```bash
 cd dashboard-replica
+```
 
-# Install dependencies
+3. **Install dependencies**
+```bash
 npm install
+```
 
-# Start the development server
+4. **Start the development server**
+```bash
 npm run dev
 ```
 

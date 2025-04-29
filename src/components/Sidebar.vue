@@ -32,8 +32,7 @@ const settings = {
                         'bgMain text-white': index === 0,
                         'hover:bgMain hover:text-white': index !== 0
                     }">
-                        <img :src="item.icon" alt="" class="w-6 group-hover:invert"
-                            :class="{ 'invert': index === 0}">
+                        <img :src="item.icon" alt="" class="w-6 group-hover:invert" :class="{ 'invert': index === 0 }">
                         {{ item.name }}
                     </span>
                 </li>

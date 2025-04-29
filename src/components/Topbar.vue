@@ -11,7 +11,7 @@ const showNotificationsTooltip = ref(false)
 
 <template>
     <div class="flex justify-between w-full h-13 bg-white items-center px-8">
-        <h1 class="text-xl font-semibold text-black">Dashboard</h1>
+        <h1 class="text-xl font-bold text-black">Dashboard</h1>
         <div class="flex items-center gap-4">
             <div
                 class="flex items-center gap-1 bg-gray-100 rounded-lg py-1 px-3 border border-gray-200 transform transition-transform hover:scale-105">
@@ -20,7 +20,8 @@ const showNotificationsTooltip = ref(false)
             </div>
             <div class="relative" @mouseenter="showNotificationsTooltip = true"
                 @mouseleave="showNotificationsTooltip = false">
-                <img :src="bell" alt="Bell" role="button" class="w-5 cursor-pointer transform transition-transform hover:scale-110">
+                <img :src="bell" alt="Bell" role="button"
+                    class="w-5 cursor-pointer transform transition-transform hover:scale-110">
                 <div v-show="showNotificationsTooltip"
                     class="absolute left-1/2 -translate-x-1/2 mt-2 w-28 bg-white px-2 py-1 rounded shadow z-10">
                     <p class="text-xs font-semibold text-center">There are no new notifications</p>

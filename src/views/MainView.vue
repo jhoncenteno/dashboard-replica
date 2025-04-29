@@ -1,7 +1,7 @@
 <script setup>
-    import Sidebar from '../components/Sidebar.vue';
-    import TopBar from '../components/TopBar.vue';
-    import Dashboard from '../modules/Dashboard/Dashboard.vue';
+import Sidebar from '../components/Sidebar.vue';
+import TopBar from '../components/TopBar.vue';
+import Dashboard from '../modules/Dashboard/Dashboard.vue';
 </script>
 
 <template>
