@@ -61,8 +61,6 @@ const options = {
             color: chartColor,
             height: chartWidth,
             width: '100%',
-            offsetX: 0,
-            offsetY: 0
         },
     },
     markers: {
@@ -75,9 +73,9 @@ const options = {
         max: 50,
         tickAmount: 5,
         labels: {
+            // Hide label for 0 value
             formatter: function (val) {
-                const allowed = [5, 10, 20, 30, 40, 50];
-                return allowed.includes(val) ? val : '';
+                return val !== 0 ? val : '';
             }
         }
     },
@@ -85,8 +83,10 @@ const options = {
         marker: { show: false },
         y: {
             title: {
+                // Hide title value
                 formatter: () => ''
             },
+            // Style tooltip text
             formatter: function (val) {
                 return `<div style="text-align: center;">${val}<br/>${props.title}</div>`
             }
@@ -105,7 +105,6 @@ const series = [{
 </script>
 
 <template>
-
     <div class="w-full aspect-[4.3/1] p-2 bg-white rounded-lg transform transition-transform hover:scale-102">
         <VueApexCharts width="100%" height="100%" type="line" :options="options" :series="series" />
     </div>

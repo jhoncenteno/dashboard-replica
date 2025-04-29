@@ -31,9 +31,9 @@ const showNewVoiceTooltip = ref(false)
 <template>
 
     <div class="flex items-start gap-10 h-full">
-
+        <!-- Brand Voices Card (Left side) -->
         <div class="w-[12vw]">
-            <div class="bg-white p-4 rounded-lg space-y-4 transform transition-transform hover:scale-105">
+            <div class="bg-white p-4 rounded-lg space-y-4 hover-scale">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                         <img :src="speaker" alt="Speaker" class="w-3" />
@@ -57,12 +57,14 @@ const showNewVoiceTooltip = ref(false)
             </div>
         </div>
 
+        <!-- Filters, Stats and Charts and  (Rigth Side) -->
         <div class="h-full flex-1 flex flex-col justify-between">
+            <!-- Filters and Stats -->
             <div class="flex flex-wrap justify-between items-stretch gap-4">
 
                 <div class="flex flex-wrap gap-4">
 
-                    <div class="relative transform transition-transform hover:scale-105">
+                    <div class="relative hover-scale">
                         <select class="text-gray-700 font-bold">
                             <option>All Brand Voices</option>
                         </select>
@@ -70,7 +72,7 @@ const showNewVoiceTooltip = ref(false)
                             class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4" />
                     </div>
 
-                    <div class="relative transform transition-transform hover:scale-105">
+                    <div class="relative hover-scale">
                         <select class="text-gray-700 font-bold">
                             <option>This Month</option>
                         </select>
@@ -78,7 +80,7 @@ const showNewVoiceTooltip = ref(false)
                             class="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4" />
                     </div>
 
-                    <div class="relative transform transition-transform hover:scale-105">
+                    <div class="relative hover-scale">
                         <select class="text-gray-700 font-bold">
                             <option>All Team Members</option>
                         </select>
@@ -89,11 +91,11 @@ const showNewVoiceTooltip = ref(false)
                 </div>
 
                 <div class="flex gap-8">
-                    <div class="flex flex-col text-center">
+                    <div class="flex flex-col text-center hover-scale">
                         <span class="text-lg font-bold text-gray-800">{{ totalComments }}</span>
                         <span class="text-xs text-main-color font-semibold">Total Comments</span>
                     </div>
-                    <div class="flex flex-col text-center">
+                    <div class="flex flex-col text-center hover-scale">
                         <p class="text-lg font-bold text-gray-800">{{ totalActions }}</p>
                         <p class="text-xs text-main-color font-semibold">Total Actions</p>
                     </div>
@@ -101,8 +103,13 @@ const showNewVoiceTooltip = ref(false)
 
             </div>
 
-            <ChartCard title="Comments" :data="chartData" :categories="chartCategories" />
-            <ChartCard title="Actions" :data="chartData" :categories="chartCategories" />
+            <!-- Charts -->
+            <div>
+                <ChartCard title="Comments" :data="chartData" :categories="chartCategories" />
+            </div>
+            <div>
+                <ChartCard title="Actions" :data="chartData" :categories="chartCategories" />
+            </div>
 
         </div>
 
@@ -110,7 +117,7 @@ const showNewVoiceTooltip = ref(false)
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 select {
     height: 100%;
     appearance: none;
@@ -118,5 +125,20 @@ select {
     padding-left: 1rem;
     padding-right: 2.5rem;
     border-radius: .25rem;
+}
+
+$hover-scale: 1.05;
+$transition-speed: 0.2s;
+
+@mixin hover-effect {
+    transition: transform $transition-speed ease;
+
+    &:hover {
+        transform: scale($hover-scale);
+    }
+}
+
+.hover-scale {
+    @include hover-effect;
 }
 </style>

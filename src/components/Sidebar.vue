@@ -22,10 +22,13 @@ const settings = {
 <template>
 
     <div class="w-[15vw] h-screen bg-white text-black flex flex-col">
+        <!-- Title -->
         <span class="px-6 py-4 font-bold text-2xl border-gray-700">
             Dashboard App
         </span>
+        <!-- Bar Items -->
         <div class="flex-1 flex flex-col mt-8">
+            <!-- Module Items -->
             <ul class="">
                 <li v-for="(item, index) in items" :key="index">
                     <span class="flex items-center gap-2 px-8 py-3 w-full font-semibold group" :class="{
@@ -37,6 +40,7 @@ const settings = {
                     </span>
                 </li>
             </ul>
+            <!-- Settings Item -->
             <ul class="mt-auto border-t border-gray-300">
                 <li>
                     <span class="flex items-center gap-2 px-8 py-3 hover:bgMain hover:text-white font-semibold group">
