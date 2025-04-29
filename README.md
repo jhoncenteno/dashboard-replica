@@ -9,7 +9,7 @@ To run the project locally:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/vue-dashboard-assessment.git # USE REAL REPOSITORY
+git clone https://github.com/jhoncenteno/dashboard-replica.git
 ```
 
 2. **Navigate to the project directory**
